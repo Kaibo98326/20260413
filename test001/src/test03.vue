@@ -1,0 +1,17 @@
+<script setup>
+import { ref } from 'vue';  
+
+const message = 'Hello Vue!'
+const isActive = ref(false)
+
+</script>
+<template>
+    <div>
+        <p>訊息: {{message}}</p>
+        <p>計算: {{1+1}}</p>
+        <p>呼叫方法: {{message.toUpperCase()}}</p>
+        <p>三元運算: {{isActive ? '顯示' : '停用'}}</p>
+        <button v-on:click="isActive = !isActive">點擊我</button>
+    </div>
+</template>
+<style scoped></style>
