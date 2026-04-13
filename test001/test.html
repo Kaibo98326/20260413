@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <div class="row">
+            <label for="userId">ID : </label>
+            <input type="text" id="userId" name="userId" placeholder="輸入使用者帳號">
+        </div>
+        <div class="row">
+            <label for="userPWD">Password : </label>
+            <input type="password" id="userPWD" name="userPWD" placeholder="輸入使用者密碼">
+        </div>
+        <div class="ctrl">
+            <button>送出</button>
+        </div>
+    </form>
+    <script>
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            //檢查後 ,欄位內容正確,再送出表單
+            // e.target.submit();
+            console.log(form);
+        });
+        
+
+
+    </script>
+</body>
+</html>
